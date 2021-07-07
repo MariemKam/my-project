@@ -29,5 +29,9 @@ jobs:
       run: ./gradlew build
       
     - name: Build and Push Docker Image
-      run: pwd && ls
+      run: |
+           docker login -u Mariemkammoun -p DockerHub2020. docker.io
+           docker build -t myproject .
+           docker push myproject:latest
+          
      
