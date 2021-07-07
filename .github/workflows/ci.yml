@@ -30,7 +30,7 @@ jobs:
       
     - name: Build and Push Docker Image
       run: |
-           docker login ="mariemkammoun" -p="DockerHub2020." docker.io
+           docker login ="mariemkammoun" -p="DockerHub2020." https://hub.docker.com/
            docker build -t myproject .
            docker push myproject:latest
           
